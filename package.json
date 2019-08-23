@@ -1,0 +1,22 @@
+{
+  "name": "string-to-readable-url",
+  "version": "1.0.0",
+  "description": "Transform string to readable url",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.spec.js"
+  },
+  "keywords": [
+    "transform",
+    "string",
+    "to",
+    "readable",
+    "url"
+  ],
+  "repository": "git@github.com:neosiae/string-to-readable-url.git",
+  "author": "Denis Kotlica <neosiae@protonmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^4.11.0"
+  }
+}
