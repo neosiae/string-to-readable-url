@@ -13,12 +13,14 @@ test("transforms a string to the readable url", t => {
   const url1 = stringToReadableURL("String~to@readable#url");
   const url2 = stringToReadableURL("String$to%readable^url");
   const url3 = stringToReadableURL("String&to(readable)url");
-  const url4 = stringToReadableURL("String_to+readable.url");
+  const url4 = stringToReadableURL("String_to+readable.=url");
+  const url5 = stringToReadableURL("String*&_to-#!readable#@url");
 
   t.equal("string-to-readable-url", url1);
   t.equal("string-to-readable-url", url2);
   t.equal("string-to-readable-url", url3);
   t.equal("string-to-readable-url", url4);
+  t.equal("string-to-readable-url", url5);
 
   t.end();
 });
